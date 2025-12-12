@@ -2,8 +2,8 @@
 import { GoogleGenAI } from "@google/genai";
 
 export const generateImageDescription = async (base64Image: string): Promise<string> => {
-  // Initialize client inside the function to ensure process.env is ready
-  const apiKey = process.env.API_KEY;
+  // Use Vite environment variable for Gemini API key
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   
   if (!apiKey) {
     console.error("API Key is missing!");
