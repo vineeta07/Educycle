@@ -1,0 +1,8 @@
+{
+  "name": "Educycle",
+  "description": "Educycle - A multilingual student marketplace and community platform.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
